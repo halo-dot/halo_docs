@@ -7,10 +7,7 @@ A debug version of the SDK is made available to support development efforts, but
 ##### Access Maven Repo
 Your AWS access key and secret key will be provided to you separately. These are sensitive and should not be committed to source control. Add the credentials into a local.properties file:
 
-```gradle
-aws.accesskey=<SECRET>
-aws.secretkey=<SECRET>
-```
+{{SECRET_ACCESS_KEYS}}
 
 <br />
 
