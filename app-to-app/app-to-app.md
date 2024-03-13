@@ -10,7 +10,7 @@ The Halo.Go application currently provides different mechanisms to integrate and
 
 Have a look at the image below as a guideline:
 
-<img src="assets/docs/app-to-app/android_vs_deeplinking.png" alt="Android vs Deeplinking" width="600"/>
+<img src="android_vs_deeplinking.png" alt="Android vs Deeplinking" width="600"/>
 
 
 ##### 2. Intent Authorization
@@ -21,11 +21,11 @@ Get Merchant ID: The ```Merchant ID``` can easily be found on the Halo.Go Portal
 
 Get x-api-key: In the user table generate your ```API Key```. Note the warning pop-up when generating an ```API Key```.
 
-<img src="assets/docs/app-to-app/api_key_generate.png" alt="API Key" width="400"/>
+<img src="api_key_generate.png" alt="API Key" width="400"/>
 
 Since an ```API Key``` is a sensitive value, it is stored as an encrypted value in our database and only presented in clear text once during the initial retrieval. It is the responsibility of the user to keep their ```API Key``` safe.
 
-<img src="assets/docs/app-to-app/api_key_success.png" alt="API Key" width="400"/>
+<img src="api_key_success.png" alt="API Key" width="400"/>
 
 
 ##### 3. Intent Use Cases
