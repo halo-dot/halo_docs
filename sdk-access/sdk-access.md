@@ -4,12 +4,12 @@ The SDK is hosted in a maven repo, hosted in an S3 bucket in a Halo AWS account.
 
 A debug version of the SDK is made available to support development efforts, but only the release version will be permitted to transact in production.The debug version has full logging enabled and allows a debugger to be attached to the app.
 
+---
+
 ##### Access Maven Repo
 Your AWS access key and secret key will be provided to you separately. These are sensitive and should not be committed to source control. Add the credentials into a local.properties file:
 
 {{SECRET_ACCESS_KEYS}}
-
-<br />
 
 Add the following to your project-level gradle file, to read the access credentials into variables:
 
@@ -31,7 +31,7 @@ ext {
   }
 ```
 
-<br />
+---
 
 Add the following to your module-level gradle file, to pull the artifacts:
   1. Snapshots: Debug builds
@@ -57,7 +57,7 @@ Add the following to your module-level gradle file, to pull the artifacts:
   }          
 ```
 
-<br />
+---
 
 Finally, add the following to your build.gradle:
 
@@ -81,6 +81,15 @@ After a gradle sync, you should now be able to import from the za.co.synthesis.h
   import za.co.synthesis.halo.sdk.HaloSDK
 ```
 
-<br />
+---
 
-For a more technical integration guide, see the <ins>[next guide](https://halo-dot-developer-docs.gitbook.io/halo-dot/sdk/2.-sdk-integration-guide)</ins>.
+Add Issuer Name and Public Key. If you’re unsure where to find this, find out more information <ins>[here](https://halo-dot-developer-docs.gitbook.io/halo-dot/sdk/2.-sdk-integration-guide)</ins>.
+
+{{ACQUIRER_FORM}}
+
+---
+
+Now that you have access to the SDK, the quickest way to see it in action is to check out our sample app available.
+
+Just check it out, add your credentials and build, and you'll be tapping in no time.
+
