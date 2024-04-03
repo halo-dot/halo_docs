@@ -1,8 +1,8 @@
 ### Accessing the SDK
 
-The SDK is hosted in a maven repo, hosted in an S3 bucket in a Halo AWS account.
+The SDK is hosted in a maven repo, on a S3 bucket in a Halo AWS account.
 
-A debug version of the SDK is made available to support development efforts, but only the release version will be permitted to transact in production.The debug version has full logging enabled and allows a debugger to be attached to the app.
+A debug version of the SDK is made available to support development efforts, but only the release version will be permitted to transact in production. The debug version has full logging enabled and allows a debugger to be attached to the app.
 
 ---
 
