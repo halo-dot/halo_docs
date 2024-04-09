@@ -1,6 +1,4 @@
-### Accessing the SDK (Tues 09 Apr 2024)
-
-Demo Test
+### Access the SDK
 
 The SDK is hosted in a maven repo, on a S3 bucket in a Halo AWS account.
 
@@ -8,22 +6,26 @@ A debug version of the SDK is made available to support development efforts, but
 
 ---
 
-##### Access Maven Repo
+##### Accessing Maven Repo
 Issuer Name and Public Key.
 
 {{VIEW_ISSUER_NAME}}
 
-Now that you have access to the SDK, the quickest way to see it in action is to check out our sample app.
+---
+
+1. Now that you have access to the SDK, the quickest way to see it in action is to check out our sample app.
 
 Just add your credentials and build, and you'll be tapping in no time.
 
 ---
 
-Your AWS access key and secret key will be provided to you separately. These are sensitive and should not be committed to source control. Add the credentials into a local.properties file:
+2. Your AWS access key and secret key will be provided to you separately. These are sensitive and should not be committed to source control. Add the credentials into a local.properties file:
 
 {{VIEW_ACCESS_KEY}}
 
-Add the following to your project-level gradle file, to read the access credentials into variables:
+---
+
+3. Add the following to your project-level gradle file, to read the access credentials into variables:
 
 ```gradle
 ext {
@@ -45,9 +47,9 @@ ext {
 
 ---
 
-Add the following to your module-level gradle file, to pull the artifacts:
-  1. Snapshots: Debug builds
-  2. Release: Release builds
+4. Add the following to your module-level gradle file, to pull the artifacts:
+- Snapshots: Debug builds
+- Release: Release builds
 
 ```gradle
   repositories {
@@ -71,7 +73,7 @@ Add the following to your module-level gradle file, to pull the artifacts:
 
 ---
 
-Finally, add the following to your build.gradle:
+5. Finally, add the following to your build.gradle:
 
 ```gradle
   configurations.all {
@@ -95,4 +97,4 @@ After a gradle sync, you should now be able to import from the za.co.synthesis.h
 
 ---
 
-After experimenting with the sample app, explore your transaction history and details by visiting the **backoffice**.
+6. After experimenting with the sample app, explore your transaction history and details by visiting the **backoffice**.
