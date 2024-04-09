@@ -1,4 +1,4 @@
-#### Access the SDK	
+#### Demo Knowledge Share
 
 The SDK is hosted in a maven repo, on a S3 bucket in a Halo AWS account.
 
