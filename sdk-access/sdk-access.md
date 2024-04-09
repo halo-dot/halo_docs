@@ -49,8 +49,8 @@ ext {
 
 &#52;. Add the following to your module-level gradle file, to pull the artifacts:
 
-&#52;.&#49; Snapshots: Debug builds<br>
-&#52;.&#50; Release: Release builds
+&nbsp;&nbsp;&nbsp;&nbsp; &#52;.&#49; Snapshots: Debug builds<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &#52;.&#50; Release: Release builds
 
 ```gradle
   repositories {
