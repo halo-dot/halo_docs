@@ -1,4 +1,4 @@
-### Access the SDK
+#### Access the SDK	
 
 The SDK is hosted in a maven repo, on a S3 bucket in a Halo AWS account.
 
@@ -6,7 +6,7 @@ A debug version of the SDK is made available to support development efforts, but
 
 ---
 
-#### Accessing Maven Repo
+##### Accessing Maven Repo
 Issuer Name and Public Key.
 
 {{VIEW_ISSUER_NAME}}
@@ -49,8 +49,7 @@ ext {
 
 &#52;. Add the following to your module-level gradle file, to pull the artifacts:
 
-&#52;.&#49; Snapshots: Debug builds
-
+&#52;.&#49; Snapshots: Debug builds<br>
 &#52;.&#50; Release: Release builds
 
 ```gradle
