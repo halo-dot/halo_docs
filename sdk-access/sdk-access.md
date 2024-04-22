@@ -74,23 +74,7 @@ ext {
 
 ---
 
-&#53;. Finally, add the following to your build.gradle:
-
-```gradle
-  configurations.all {
-    resolutionStrategy.cacheChangingModulesFor 1, 'days'
-    resolutionStrategy.dependencySubstitution {
-      substitute(module("androidx.core:core-ktx")).with(module("androidx.core:core-ktx:(*, 1.3.2]"))
-      substitute(module("org.jetbrains.kotlin:kotlin-stdlib-jdk7")).with(module("org.jetbrains.kotlin:kotlin-stdlib-jdk7:(*, 1.3.72]"))
-      substitute(module("org.jetbrains.kotlin:kotlin-stdlib-jdk8")).with(module("org.jetbrains.kotlin:kotlin-stdlib-jdk7:(*, 1.3.72]"))
-      substitute(module("org.jetbrains.kotlin:kotlin-stdlib-common")).with(module("org.jetbrains.kotlin:kotlin-stdlib-common:(*, 1.3.72]"))
-    }
-  }
-```
-
-<br />
-
-After a gradle sync, you should now be able to import from the za.co.synthesis.halo.sdk namespace, e.g:
+&#53; After a gradle sync, you should now be able to import from the za.co.synthesis.halo.sdk namespace, e.g:
 
 ```kotlin
   import za.co.synthesis.halo.sdk.HaloSDK
