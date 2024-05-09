@@ -11,9 +11,6 @@ To start integrating the Halo.SDK into your app, follow these steps:
     - The release version is suitable for production use. The debug version is intended for development and testing purposes. It has full logging enabled and allows a debugger to be attached to the app.
 
 <br/>
-    To see the SDK in action, check out our [test app](https://github.com/halo-dot/halo_test_app) on GitHub.
-
-<br/>
 
 2. **Maven Repository**
 
