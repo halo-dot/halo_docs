@@ -4,12 +4,11 @@ Welcome to the Halo.SDK integration guide! Follow these steps to quickly integra
 
 ##### Getting Started
 
-To start integrating the Halo.SDK into your app, follow these steps:
+To start integrating the Halo.SDK into your app, you will need to add it as a dependency in your project.
 
-1. **Access the SDK**
-    - You can access the Halo.SDK by adding it as a dependency in your project. Both debug and release versions of the SDK are available.
-    - The release version is suitable for production use. The debug version is intended for development and testing purposes. It has full logging enabled and allows a debugger to be attached to the app.
-    - The Halo.SDK is hosted in a Maven repository, stored in an S3 bucket in a Halo AWS account.
+Both debug and release versions of the SDK are available. The release version is suitable for production use. The debug version is intended for development and testing purposes; it has full logging enabled and allows a debugger to be attached to the app.
+
+The Halo.SDK is hosted in a Maven repository, stored in an S3 bucket in a Halo AWS account.
 
 ---
 
