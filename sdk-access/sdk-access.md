@@ -13,8 +13,7 @@ To start integrating the Halo.SDK into your app, follow these steps:
 <br/>
 
 2. **Maven Repository**
-
-    The Halo.SDK is hosted in a Maven repository, stored in an S3 bucket in a Halo AWS account.
+     - The Halo.SDK is hosted in a Maven repository, stored in an S3 bucket in a Halo AWS account.
 
 
 ---
