@@ -1,85 +1,131 @@
-#### SDK Access
+#### Halo.SDK Integration Guide
 
-The SDK is hosted in a maven repo, on a S3 bucket in a Halo AWS account.
+Welcome to the Halo.SDK integration guide! Follow these steps to quickly integrate the Halo.SDK into your Android application.
 
-A debug version of the SDK is made available to support development efforts, but only the release version will be permitted to transact in production. The debug version has full logging enabled and allows a debugger to be attached to the app.
+##### Getting Started
+
+To start integrating the Halo.SDK into your app, follow these steps:
+
+1. **Access the SDK**
+
+    - You can access the Halo.SDK by adding it as a dependency in your project. Both debug and release versions of the SDK are available.
+    
+    - The release version is suitable for production use.
+    
+    - The debug version is intended for development and testing purposes. It has full logging enabled and allows a debugger to be attached to the app.
+
+    To see the SDK in action, check out our [test app](https://github.com/halo-dot/halo_test_app) on GitHub.
+
+2. **Maven Repository**
+
+    The Halo.SDK is hosted in a Maven repository, stored in an S3 bucket in a Halo AWS account.
 
 ---
 
-##### Accessing Maven Repo
-Issuer Name and Public Key.
+##### Your Issuer Name and Public Key
+
+You should have received the credentials needed to access the Halo.SDK. Here is your issuer name and public key:
 
 {{VIEW_ISSUER_NAME}}
 
 ---
 
-&#49;. Now that you have access to the SDK, the quickest way to see it in action is to check out our sample app.
+##### Setup
 
-Just add your credentials and build, and you'll be tapping in no time.
+1. **Download the Test App**
 
----
+    Download our [test app](https://github.com/halo-dot/halo_test_app) from GitHub.
 
-&#50;. Your AWS access key and secret key will be provided to you separately. These are sensitive and should not be committed to source control. Add the credentials into a local.properties file:
+2. **Configure Your App**
+
+    - Open `Config.kt` and replace the placeholder values of `PRIVATE_KEY_PEM`, `ISSUER`, and `USERNAME` with your own values. You will need the private key you used to generate your public key, your issuer name, and your username (you can use the email or phone number used to register).
+
+        ```kotlin
+        object Config {
+            const val PRIVATE_KEY_PEM = "your_private_key"
+            const val ISSUER = "issuer.claim"
+            const val USERNAME = "username"
+            const val MERCHANT_ID = "mer12345678"
+            const val HOST = "kernelserver.qa.haloplus.io"
+        }
+        ```
+
+    - Open the `local.properties` file and replace the placeholder values of `aws.accessKey` and `aws.secretKey`. These credentials are sensitive and should not be committed to source control. Add the credentials into a `local.properties` file:
+
+        ```properties
+        sdk.dir=~/Library/Android/sdk
+        aws.accessKey=your_access_key
+        aws.secretKey=your_secret_key
+        ```
+
+        `sdk.dir` specifies the location of the Android SDK on your file system.
 
 {{VIEW_ACCESS_KEY}}
 
----
+3. **Gradle Setup**
 
-&#51;. Add the following to your project-level gradle file, to read the access credentials into variables:
+    After a Gradle sync, you should be able to import from the `za.co.synthesis.halo.sdk` namespace:
 
-```gradle
-ext {
-    Properties properties = new Properties()
-    def propertiesFile = project.rootProject.file('local.properties')
-    if (propertiesFile.exists()) {
-      properties.load(propertiesFile.newDataInputStream())
-    }
-    def localAccessKey = properties.getProperty('aws.accesskey')
-    def systemEnvAccessKey = System.getenv('AWS_ACCESS_KEY_ID')
-
-    def localSecretKey = properties.getProperty('aws.secretkey')
-    def systemEnvSecretKey = System.getenv('AWS_SECRET_ACCESS_KEY')
-
-    accessKey = localAccessKey != null ? localAccessKey : systemEnvAccessKey
-    secretKey = localSecretKey != null ? localSecretKey : systemEnvSecretKey
-  }
-```
+    ```kotlin
+    import za.co.synthesis.halo.sdk.HaloSDK
+    ```
 
 ---
 
-&#52;. Add the following to your module-level gradle file, to pull the artifacts:
+##### Additional Configuration
 
-&nbsp;&nbsp;&nbsp;&nbsp; &#52;.&#49; Snapshots: Debug builds<br>
-&nbsp;&nbsp;&nbsp;&nbsp; &#52;.&#50; Release: Release builds
+1. **Read AWS Credentials from `local.properties`**
 
-```gradle
-  repositories {
-    def repos = [
-      'releases',
-      'snapshots'
-    ]
+    This code snippet reads AWS credentials from a `local.properties` file and sets them as project properties in the Gradle build:
 
-    repos.each {repo ->
-      maven {
-        name = repo
-        url = "s3://synthesis-halo-artifacts/$repo"
-        credentials(AwsCredentials) {
-          accessKey = rootProject.ext.accessKey
-          secretKey = rootProject.ext.secretKey
+    ```gradle
+    ext {
+        Properties properties = new Properties()
+        def propertiesFile = project.rootProject.file('local.properties')
+        if (propertiesFile.exists()) {
+            properties.load(propertiesFile.newDataInputStream())
         }
-      }
+
+        accessKey = properties.getProperty('aws.accessKey')
+        secretKey = properties.getProperty('aws.secretKey')
+        tokenKey = System.getenv('AWS_SESSION_TOKEN')
     }
-  }          
-```
+    ```
 
----
+2. **Maven Repository Configuration**
 
-&#53; After a gradle sync, you should now be able to import from the za.co.synthesis.halo.sdk namespace, e.g:
+    This configuration sets up Maven repositories hosted in an S3 bucket in a Halo AWS account:
 
-```kotlin
-  import za.co.synthesis.halo.sdk.HaloSDK
-```
+    ```gradle
+    repositories {
+        def repos = ['releases', 'snapshots']
+        repos.each { repo ->
+            maven {
+                name = repo
+                url = "s3://synthesis-halo-artifacts/$repo"
 
----
+                credentials(AwsCredentials) {
+                    accessKey = rootProject.ext.accessKey
+                    secretKey = rootProject.ext.secretKey
+                    if (tokenKey != null) {
+                        sessionToken = rootProject.ext.tokenKey
+                    }
+                }
+            }
+        }
+    }
+    ```
 
-&#54;. After experimenting with the sample app, explore your transaction history and details by visiting the **backoffice**.
+3. **SDK Dependencies**
+
+    This code snippet configures the Halo.SDK dependencies for your project in the app-level `build.gradle`:
+
+    ```gradle
+    dependencies {
+        // Declare dependencies for the Halo SDK
+        debugImplementation group: 'za.co.synthesis.halo', name: 'sdk', version: '2.1.26-debug'
+        releaseImplementation group: 'za.co.synthesis.halo', name: 'sdk', version: '2.1.26'
+    }
+    ```
+
+Now, you are ready to start using the Halo.SDK in your Android application!
