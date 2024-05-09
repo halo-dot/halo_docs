@@ -8,8 +8,9 @@ To start integrating the Halo.SDK into your app, follow these steps:
 
 1. **Access the SDK**
     - You can access the Halo.SDK by adding it as a dependency in your project. Both debug and release versions of the SDK are available.
-    - The release version is suitable for production use.
-    - The debug version is intended for development and testing purposes. It has full logging enabled and allows a debugger to be attached to the app.
+    - The release version is suitable for production use. The debug version is intended for development and testing purposes. It has full logging enabled and allows a debugger to be attached to the app.
+
+<br/>
 
     To see the SDK in action, check out our [test app](https://github.com/halo-dot/halo_test_app) on GitHub.
 
