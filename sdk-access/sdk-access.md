@@ -7,15 +7,13 @@ Welcome to the Halo.SDK integration guide! Follow these steps to quickly integra
 To start integrating the Halo.SDK into your app, follow these steps:
 
 1. **Access the SDK**
-
     - You can access the Halo.SDK by adding it as a dependency in your project. Both debug and release versions of the SDK are available.
-    
     - The release version is suitable for production use.
-    
     - The debug version is intended for development and testing purposes. It has full logging enabled and allows a debugger to be attached to the app.
 
     To see the SDK in action, check out our [test app](https://github.com/halo-dot/halo_test_app) on GitHub.
 
+<br/>
 
 2. **Maven Repository**
 
@@ -24,11 +22,13 @@ To start integrating the Halo.SDK into your app, follow these steps:
 
 ---
 
-##### Your Issuer Name, Public Key, and AWS Credentials
-
-Here is your issuer name and public key:
+##### Your Issuer Name and Public Key
 
 {{VIEW_ISSUER_NAME}}
+
+---
+
+##### Your Access Credentials
 
 {{VIEW_ACCESS_KEY}}
 
@@ -40,6 +40,7 @@ Here is your issuer name and public key:
 
     Download our [test app](https://github.com/halo-dot/halo_test_app) from GitHub.
 
+<br/>
 
 2. **Configure Your App**
 
@@ -65,6 +66,7 @@ Here is your issuer name and public key:
 
         `sdk.dir` specifies the location of the Android SDK on your file system.
 
+<br/>
 
 3. **Gradle Setup**
 
@@ -95,6 +97,7 @@ Here is your issuer name and public key:
         tokenKey = System.getenv('AWS_SESSION_TOKEN')
     }
     ```
+<br/>
 
 2. **Maven Repository Configuration**
 
@@ -119,6 +122,7 @@ Here is your issuer name and public key:
         }
     }
     ```
+<br/>
 
 3. **SDK Dependencies**
 
