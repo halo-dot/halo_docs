@@ -10,15 +10,19 @@ Both debug and release versions of the SDK are available. The release version is
 
 The Halo.SDK is hosted in a Maven repository, stored in an S3 bucket in a Halo AWS account.
 
+Before you begin, ensure you have the following:
+
+- **[Android Studio](https://developer.android.com/studio):** You will need Android Studio installed on your system to run the test app.
+
 ---
 
-##### Your Issuer Name and Public Key
+###### Your Issuer Name and Public Key
 
 {{VIEW_ISSUER_NAME}}
 
 ---
 
-##### Your Access Credentials
+###### Your Access Credentials
 
 {{VIEW_ACCESS_KEY}}
 
