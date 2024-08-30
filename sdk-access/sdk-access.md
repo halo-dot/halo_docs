@@ -13,6 +13,7 @@ The Halo.SDK is hosted in a Maven repository, stored in an S3 bucket in a Halo A
 Before you begin, ensure you have the following:
 
 - **<a href="https://developer.android.com/studio" target="_blank">Android Studio</a>:** You will need Android Studio installed on your system to run the test app.
+- **[Public key and a Private key](/get-started/docs/jwt):** Check out our guide to create SSH keys [here](/get-started/docs/jwt)
 
 ---
 
