@@ -12,7 +12,7 @@ The Halo.SDK is hosted in a Maven repository, stored in an S3 bucket in a Halo A
 
 Before you begin, ensure you have the following:
 
-- **[Android Studio](https://developer.android.com/studio):** You will need Android Studio installed on your system to run the test app.
+- **<a href="https://developer.android.com/studio" target="_blank">Android Studio</a>:** You will need Android Studio installed on your system to run the test app.
 
 ---
 
@@ -32,7 +32,7 @@ Before you begin, ensure you have the following:
 
 1. **Download the Test App**
 
-    Download our [test app](https://github.com/halo-dot/halo_test_app) from GitHub.
+    Download our <a href="https://github.com/halo-dot/halo_test_app" target="_blank">test app</a> from GitHub.
 
 <br/>
 
