@@ -48,6 +48,8 @@ Before you begin, ensure you have the following:
             const val USERNAME = "username"
             const val MERCHANT_ID = "mer12345678"
             const val HOST = "kernelserver.qa.haloplus.io"
+            const val AUD = "{{AUD}}"
+            const val KSK = "{{KSK}}"
         }
         ```
 
