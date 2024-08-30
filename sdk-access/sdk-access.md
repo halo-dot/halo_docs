@@ -33,7 +33,7 @@ Before you begin, ensure you have the following:
 
 1. **Download the Test App**
 
-    Download our <a href="https://github.com/halo-dot/halo_test_app" target="_blank">test app</a> from GitHub.
+    Download our <a href="https://github.com/halo-dot/test_app-android_sdk" target="_blank">test app</a> from GitHub.
 
 <br/>
 
