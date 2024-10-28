@@ -5,4 +5,4 @@ With Halo Dot the exact same technology can be used for different use cases. How
 1. Android Intents Mechanism
 2. Deeplinking Mechanism
 
-<img src="{{APP_TO_APP}}" alt="Android vs Deeplinking" width="600"/>
+<img src="android_vs_deeplinking.png" alt="Android vs Deeplinking" width="600"/>
