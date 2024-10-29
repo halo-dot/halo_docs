@@ -16,6 +16,8 @@ Please download our demo Application, Halo Go on an NFC enabled Android device
 
 Generate a unique API Key for your user, below. Note the warning pop-up when generating an API Key.
 
+<img src="integratorID.png"/>
+
 {{GENERATE_INTEGRATOR_KEY}}
  
 
