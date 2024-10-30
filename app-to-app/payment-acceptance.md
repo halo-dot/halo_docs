@@ -17,7 +17,7 @@ ID from the previous step for this API call.
 https://kernelserver.prod.haloplus.io/consumer/intentTransaction
 
 The Call to initiate an Intent Transactioin.
-
+<br/>
 #### Headers
 
 | Name |Type | Description |

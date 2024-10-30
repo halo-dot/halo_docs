@@ -10,7 +10,7 @@ Read information here
 
 Please download our demo Application, Halo Go on an NFC enabled Android device
 
-<img src="haloGo.png"/>
+{{DOWNLOAD_APP}}
 
 #### Retrieve Details
 
