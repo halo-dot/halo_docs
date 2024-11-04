@@ -1,5 +1,7 @@
 ### Getting Started with App to App Integration
+
 <hr />
+
 #### What is App to App Integration?
 
 Read information here
