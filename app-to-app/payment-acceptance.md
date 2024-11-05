@@ -3,7 +3,7 @@
 
 Integration with Halo.Go application for transactions using Android Intent Mechanism.
 
-We provide a sample code to help you with the intent request function call. The code is available on <a href="(https://github.com/" target="_blank" >GitHub</a>.
+We provide a sample code to help you with the intent request function call. The code is available on <a href="https://github.com/" target="_blank" >GitHub</a>.
 
 >   Note: Experience with Android development is advised
 
@@ -14,7 +14,9 @@ ID from the previous step for this API call.
 
 #### Post
 
-[https://kernelserver.prod.haloplus.io/consumer/intentTransaction](!#)
+```
+https://kernelserver.prod.haloplus.io/consumer/intentTransaction
+```
 
 The Call to initiate an Intent Transactioin.
 <br/>
