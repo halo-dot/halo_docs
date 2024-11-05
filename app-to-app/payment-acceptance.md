@@ -14,7 +14,7 @@ ID from the previous step for this API call.
 
 #### Post
 
-https://kernelserver.prod.haloplus.io/consumer/intentTransaction
+[https://kernelserver.prod.haloplus.io/consumer/intentTransaction](#)
 
 The Call to initiate an Intent Transactioin.
 <br/>
