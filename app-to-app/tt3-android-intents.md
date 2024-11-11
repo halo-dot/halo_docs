@@ -1,5 +1,5 @@
 
-## Transactions/Payments Acceptance using Android Intents
+## TT3/DebiCheck using Android Intents
 
 Integration with Halo.Go application for transactions using Android Intent Mechanism.
 
@@ -7,19 +7,21 @@ We provide a sample code to help you with the intent request function call. The 
 
 >   Note: Experience with Android development is advised
 
-### Initiate an Intent Transaction
+### Initiate a TT3 Intent Transaction
 
-Retrieve a ```Transaction ID``` and payment ```JWT``` by hitting the endpoing below. You will need the API Key and ```Merchant
+Retrieve a ```Transaction ID``` and payment JWT by hitting the endpoing below. You will need the ```API Key``` and ```Merchant
 ID``` from the previous step for this API call.
 
 #### Post
 
 ```
-https://kernelserver.prod.haloplus.io/consumer/intentTransaction
+https://kernelserver.prod.haloplus.io/consumer/tt3IntentTransaction
 ```
 
-The Call to initiate an Intent Transactioin.
+The Call to initiate an TT3 Intent Transactioin.
+
 <br/>
+
 #### Headers
 
 | Name |Type | Description |
@@ -40,7 +42,7 @@ The Call to initiate an Intent Transactioin.
 
 #### Response
 
-200: OK Intent Transaction JWT
+201: Created TT3 Intent Transaction JWT
 
 The response will contain a Transaction ID and JWT Token that will be used in the Intent call
 

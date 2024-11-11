@@ -6,8 +6,8 @@ Integration with Halo.Go application for transactions using Deeplinking.
 
 ### Initiate a Deeplink Transaction
 
-Retrieve a Transaction URL and payment JWT by hitting the endpoing below. You will need the API Key and Merchant
-ID from the previous step for this API call.
+Retrieve a ```Transaction URL``` and ```Reference``` by hitting the endpoing below. You will need the ```API Key``` and ```Merchant
+ID``` from the previous step for this API call.
 
 #### Post
 
