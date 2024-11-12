@@ -7,10 +7,14 @@ We provide a sample code to help you with the intent request function call. The 
 
 >   Note: Experience with Android development is advised
 
+<br/>
+
 ### Initiate a TT3 Intent Transaction
 
 Retrieve a ```Transaction ID``` and payment JWT by hitting the endpoing below. You will need the ```API Key``` and ```Merchant
 ID``` from the previous step for this API call.
+
+<br/>
 
 #### Post
 
@@ -29,6 +33,8 @@ The Call to initiate an TT3 Intent Transactioin.
 | Content-Type* | String | Content Type of The Request: application/json|
 | x-api-key| String | The API Key retrieved from the Merchant Portal|
 
+<br/>
+
 #### Request Body
 
 | Name |Type | Description |
@@ -39,6 +45,8 @@ The Call to initiate an TT3 Intent Transactioin.
 | timestamp* | String | ISO Standard Timestamp |
 | currencyCode* | String | ISO Standard Currency Codes |
 | packageName* | String | Identifier of the app |
+
+<br/>
 
 #### Response
 
@@ -56,6 +64,8 @@ Please see the example of the response body below:
      XVkX2ZpbmdlcnByaW50cyI6InNoYTI1Ni96YzZjOTdKaEtQWlVhK3JJE..."
 }
 ```
+
+<br/>
 
 #### Send an Intent Request to the Halo Dot Go App
 

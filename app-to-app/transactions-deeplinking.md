@@ -3,11 +3,14 @@
 
 Integration with Halo.Go application for transactions using Deeplinking.
 
+<br/>
 
 ### Initiate a Deeplink Transaction
 
 Retrieve a ```Transaction URL``` and ```Reference``` by hitting the endpoing below. You will need the ```API Key``` and ```Merchant
 ID``` from the previous step for this API call.
+
+<br/>
 
 #### Post
 
@@ -16,13 +19,17 @@ https://kernelserver.prod.haloplus.io/consumer/qrCode
 ```
 
 The Call to initiate a Deeplink Transactioin.
+
 <br/>
+
 #### Headers
 
 | Name |Type | Description |
 | ----------- | ----------- |-------------|
 | Content-Type* | String | Content Type of The Request: application/json|
 | x-api-key| String | The API Key retrieved from the Merchant Portal|
+
+<br/>
 
 #### Request Body
 
@@ -54,6 +61,8 @@ Please see the example of the request body below:
 }
 ```
 
+<br/>
+
 #### Response
 
 200: OK URL to invoke the Halo Dot Application for a payment
@@ -69,6 +78,8 @@ Please see the example of the response body below:
     "reference":"c9e1were-8156-444c-894d-e065d71366a6"
 }
 ```
+
+<br/>
 
 #### Use the Generated URL to Call the Halo Dot Go App
 
