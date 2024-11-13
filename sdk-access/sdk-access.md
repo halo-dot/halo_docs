@@ -138,5 +138,6 @@ Before you begin, ensure you have the following:
    We recommend downloading the <a href="https://apkpure.com/visa-mobile-cdet/com.visa.app.cdet" target="_blank">Visa Contactless Device Evaluation Toolkit (CDET)</a> application.<br/>
    This is an Android-based mobile application that simulates virtual cards.
 
-
+    {{VIEW_TRANSACTIOINS}}
+    
 Now, you are ready to start using the Halo.SDK in your Android application!
