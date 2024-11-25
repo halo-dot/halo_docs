@@ -18,9 +18,7 @@ ID``` from the previous step for this API call.
 
 #### Post
 
-```
 {{POST_URL}}
-```
 
 
 The Call to initiate an TT3 Intent Transactioin.
