@@ -19,7 +19,7 @@ ID``` from the previous step for this API call.
 #### Post
 
 ```
-https://kernelserver.prod.haloplus.io/consumer/tt3IntentTransaction
+{{POST_URL}}
 ```
 
 The Call to initiate an TT3 Intent Transactioin.

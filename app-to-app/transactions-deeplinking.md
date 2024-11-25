@@ -15,7 +15,7 @@ ID``` from the previous step for this API call.
 #### Post
 
 ```
-https://kernelserver.prod.haloplus.io/consumer/qrCode
+{{POST_URL}}
 ```
 
 The Call to initiate a Deeplink Transactioin.

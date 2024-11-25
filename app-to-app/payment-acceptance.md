@@ -19,7 +19,7 @@ ID``` from the previous step for this API call.
 #### Post
 
 ```
-https://kernelserver.prod.haloplus.io/consumer/intentTransaction
+{{POST_URL}}
 ```
 
 The Call to initiate an Intent Transactioin.
