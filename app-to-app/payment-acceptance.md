@@ -21,7 +21,7 @@ ID``` from the previous step for this API call.
 {{POST_URL}}
 
 
-The Call to initiate an Intent Transactioin.
+The Call to initiate an Intent Transaction.
 
 <br/>
 
