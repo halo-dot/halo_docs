@@ -32,13 +32,13 @@ Before you begin, ensure you have the following:
 
 1. **Download the Test App**
 
-    Download our <a href="https://github.com/halo-dot/test_app-android_sdk" target="_blank">test app</a> from GitHub.
+    Clone our <a href="https://github.com/halo-dot/test_app-android_sdk" target="_blank">test app</a> repo from GitHub.
 
 <br/>
 
-2. **Configure Your App**
+2. **Configure The Test App**
 
-    - Open `za/co/synthesis/halo/halotestapp/Config.kt` and replace the placeholder values of `PRIVATE_KEY_PEM`, `ISSUER`, and `USERNAME` with your own values. You will need the private key you used to generate your public key, your issuer name, and your username (you can use the email or phone number used to register).
+    - Open `za/co/synthesis/halo/halotestapp/Config.kt` and replace the placeholder values of `PRIVATE_KEY_PEM`, `ISSUER`, and `USERNAME` with your own values. You will need the private key you used to generate your public key, your issuer name, and your username.
 
         ```kotlin
         object Config {
@@ -52,7 +52,7 @@ Before you begin, ensure you have the following:
         }
         ```
 
-    - Open the `local.properties` file and replace the placeholder values of `aws.accessKey` and `aws.secretKey`. These credentials are sensitive and should not be committed to source control. Add the credentials into a `local.properties` file:
+    - Open (or create it if it does not exit) the `local.properties` file and replace the placeholder values of `aws.accessKey` and `aws.secretKey`. These credentials are sensitive and should not be committed to source control. Add the credentials into a `local.properties` file:
 
         ```properties
         sdk.dir=~/Library/Android/sdk
@@ -122,7 +122,7 @@ Before you begin, ensure you have the following:
 
 3. **SDK Dependencies**
 
-    This code snippet configures the Halo.SDK dependencies for your project in the app-level `build.gradle`:
+    This code snippet configures the Halo.SDK dependencies for the test project in the app-level `build.gradle`:
 
     ```gradle
     dependencies {
