@@ -38,7 +38,7 @@ Before you begin, ensure you have the following:
 
 2. **Configure The Test App**
 
-    - Open `za/co/synthesis/halo/halotestapp/Config.kt` and replace the placeholder values of `PRIVATE_KEY_PEM`, `ISSUER`, and `USERNAME` with your own values. You will need the private key you used to generate your public key, your issuer name, and your username.
+    - Open `app/build/src/main/java/za/co/synthesis/halo/halotestapp/Config.kt` and replace the placeholder values of `PRIVATE_KEY_PEM`, `ISSUER`, and `USERNAME` with your own values. You will need the private key you used to generate your public key, your issuer name, and your username.
 
         ```kotlin
         object Config {
