@@ -127,8 +127,8 @@ Before you begin, ensure you have the following:
     ```gradle
     dependencies {
         // Declare dependencies for the Halo SDK
-        debugImplementation group: 'za.co.synthesis.halo', name: 'sdk', version: '2.1.26-debug'
-        releaseImplementation group: 'za.co.synthesis.halo', name: 'sdk', version: '2.1.26'
+        debugImplementation group: 'za.co.synthesis.halo', name: 'sdk', version: '4.0.8-debug'
+        releaseImplementation group: 'za.co.synthesis.halo', name: 'sdk', version: '4.0.8'
     }
     ```
 4. **Testing**
